@@ -31,7 +31,7 @@ function changeImage(event) {
       videoImg.forEach((img) => img.src = `assets/img/${bird}.jpg`);
       audio.src = `assets/audio/${bird}.mp3`;
       navBtns.forEach((btn) => btn.classList.remove('active'));
-      event.target.classList.add('active'); 
+      event.target.classList.add('active');   
      if (isPlay == true) {
        audio.play();
      }
@@ -39,9 +39,9 @@ function changeImage(event) {
 }
 navBtn.addEventListener('click', changeImage);
 
+/* смена кнопки  */
 function toggleBtn() {
   button.classList.toggle('pause');
-  audio.src = `assets/audio/forest.mp3`;
 }
 playBtn.addEventListener('click', toggleBtn);
 playBtn.addEventListener('click', playAudio);
