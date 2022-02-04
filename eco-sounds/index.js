@@ -7,7 +7,6 @@ const pauseBtn = document.querySelector('pause');
 const audio = new Audio();
 let isPlay = false;
 
-
 function playAudio() {
  if(!isPlay) {
     audio.currentTime = 0;
@@ -32,16 +31,18 @@ function changeImage(event) {
       audio.src = `assets/audio/${bird}.mp3`;
       navBtns.forEach((btn) => btn.classList.remove('active'));
       event.target.classList.add('active');   
-     if (isPlay == true) {
-       audio.play();
-     }
+    if (isPlay == true) {
+      audio.play();
     }
+  }
 }
 navBtn.addEventListener('click', changeImage);
 
 /* смена кнопки  */
+
 function toggleBtn() {
   button.classList.toggle('pause');
 }
+
 playBtn.addEventListener('click', toggleBtn);
 playBtn.addEventListener('click', playAudio);
