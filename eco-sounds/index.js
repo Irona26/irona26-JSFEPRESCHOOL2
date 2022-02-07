@@ -6,6 +6,7 @@ const playBtn = document.querySelector('.play-btn');
 const pauseBtn = document.querySelector('pause');
 const audio = new Audio();
 let isPlay = false;
+audio.src = "assets/audio/forest.mp3";
 
 function playAudio() {
  if(!isPlay) {
@@ -25,6 +26,7 @@ const navBtn = document.querySelector('.nav-container');
 const videoImg = document.querySelectorAll('.img-video');
 
 function changeImage(event) {
+
   const bird = event.target.dataset.bird;
     if(event.target.classList.contains('nav-link')) {
       videoImg.forEach((img) => img.src = `assets/img/${bird}.jpg`);
