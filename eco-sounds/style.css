@@ -136,3 +136,28 @@ button:hover {
   color:#bdae82;
   cursor: pointer;
 }
+
+
+@media (max-width:786px) {
+
+  body, header, .nav-container, .header-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  .nav-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  .nav-link, .year {
+    width: 100%;
+    margin: 0;
+    padding: 0 1vw;
+    font-size: 2.5vw;
+    justify-content: center;
+  }
+
+}
